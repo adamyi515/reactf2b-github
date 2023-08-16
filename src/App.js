@@ -16,7 +16,9 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/*' element={<NotFound />} />
         </Routes>
-        <main>Content</main>
+        <main>
+          
+        </main>
       </div>
     </Router>
   );
