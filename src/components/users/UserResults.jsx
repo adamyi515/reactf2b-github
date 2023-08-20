@@ -4,11 +4,8 @@ import Loading from '../layout/Loading';
 import UserItem from './UserItem';
 
 const UserResults = () => {
-    const { isLoading, users, fetchUsers } = useContext(GithubContext);
+    const { isLoading, users } = useContext(GithubContext);
 
-    useEffect(() => {
-        fetchUsers();
-    }, [])  
 
     if(!isLoading){
         return (

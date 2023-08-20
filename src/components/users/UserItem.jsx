@@ -10,7 +10,7 @@ const UserItem = ({ user: { login, avatar_url } }) => {
 
         <div>
             <h1 style={{ fontWeight: 'bold' }}>{ login }</h1>
-            <Link to='/'>
+            <Link to={`/user/${login}`}>
                 Visit Profile
             </Link>
         </div>
